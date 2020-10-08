@@ -15,7 +15,7 @@
 
 // readInput()
 //  Enter First Number
-    // IF(First Number !== Undefined)
+    // IF(First Number === Undefined)
     <!-- First Number = ''; -->
     // Press Button with class = Number
         // read button.value
