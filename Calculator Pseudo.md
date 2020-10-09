@@ -81,26 +81,3 @@
 // displayResult(result)
     // print result
 
-
-
-
-
-
-
-// View
-class Button {
-    constructor(type, id, classList){
-        this.shape = this.shape;
-       
-       //Method VIEW
-       function shape(type, id, classList) {
-        let newElement = document.createElement(type);
-        newElement.id = id;
-        newElement.setAttribute('class', classList);
-        return newElement;
-        };
-       }
-    }
-}
-
-let button = new Button(div, id, classList);
