@@ -24,11 +24,14 @@ class Calculator {
         this.result = null;
     }
     generateNumbers(){
-        for(let i = 0; i < numArr.length; i++){
+        for(let i = 0; i < numArr.length - 1; i++){
             let number = new Number(numArr[i], 'btn btn-light', numArr[i]);
             btn_N_Arr.push(number);
             number.shape();
         }
+        let number = new Number(numArr[10], 'decimal btn btn-light', numArr[10]);
+        btn_N_Arr.push(number);
+        number.shape();
     }
     generateOperators(){
         for(let i = 0; i < opArr.length; i++){
@@ -69,9 +72,6 @@ class Number extends Button {
     }
     addNumber(){
         this.registerKey();
-        // displayArr.push(this.value);
-        // this.result = displayArr.join('');
-        // updateDisplay(this.result);
         
     }
     registerKey(){
@@ -91,7 +91,6 @@ class Number extends Button {
     }
     getCurrentOperand(){
         if(isSecondOperand == false){
-            console.log(this.firstOperand);
             this.firstOperand += this.value;
             displayArr.push(this.value);
             console.log(this.value);
@@ -134,7 +133,7 @@ class Input {
     }
 }
 
-let input = new Input('calculator-screen', '');
+let input = new Input('calculator-screen', '0');
 
 
 function init(){
